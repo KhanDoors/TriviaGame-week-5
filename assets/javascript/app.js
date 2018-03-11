@@ -1,3 +1,4 @@
+
 var questions = [];
 var response = NaN;
 var queryURL = "https://opentdb.com/api.php";
@@ -12,11 +13,11 @@ var rightScore = 0;
 var clockTick = function () {
 	if (clockSecs > 0) {
 		clockSecs--;
-		divs.timeRemaining.html("Time Remaining: " + clockSecs);
+		divs.timeRemaining.html("timeremaining: " + clockSecs);
 	} else {
 		clearInterval(clock);
 		clockSecs = 0;
-		divs.timeRemaining.html("Time Remaining: " + clockSecs);
+		divs.timeRemaining.html("timeremaining: " + clockSecs);
 		timedOut();
 	}
 };
@@ -111,7 +112,7 @@ var nextQuestion = function () {
 
 		isActive = true;
 		clockSecs = 20;
-		divs.timeRemaining.html("Time Remaining: " + clockSecs);
+		divs.timeRemaining.html("timeremaining: " + clockSecs);
 		clock = setInterval(clockTick, 1000);
 
 	} else {

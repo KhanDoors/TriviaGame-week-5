@@ -1,33 +1,49 @@
-<!doctype html>
-<html lang="en-us">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
-	<meta charset="UTF-8">
-
-	<title>Trivia Game</title>
-
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script type="text/javascript" src="assets/javascript/app.js"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type= "text/css" rel="stylesheet" href="css\style.css">
+    <title>Trivia Game Week 5</title>
+  
 </head>
-
 <body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12" id="scoreBar">
+                <h1>Jeopardy Primer</h1>
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-md-4" id="rightScore">
+                <p>Right Answer</p>
+            </div>
+            <div class="col-md-4" id="timeremaining">
+                    <p>Time Remaining</p>
+            </div>
+            <div class="col-md-4" id="wrongScore">
+                    <p>Wrong Answer</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" id="question">
+                    <p>Question</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" id="answers">
+                    <p>Answer</p>
+            </div>
+        </div>
+    </div>
+    
+    
 
-	<div id="gameArea">
-		<div id="scoreBar">
-			<div id="wrongScore"></div>
-			<div id="rightScore"></div>
-		</div>
-		<div id="gameTitle">Totally Trivial Trivia</div>
-		<div id="timeRemaining"></div>
-		<div id="question"></div>
-		<div id="answers"></div>
-	</div>
-
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="test.js"></script>
 </body>
-
 </html>
+

@@ -1,63 +1,81 @@
-html {
-	background-image: url("../images/geometry.png");
-	background-color: #ffffff;
-}
+body {
+    background-image: url("https://www.windowscentral.com/sites/wpcentral.com/files/styles/xlarge/public/field/image/2017/11/Jeopardy-Xbox-One-screenshot-01_0.jpg?itok=IbnZ5W8K");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+      
+    }
 
-#scoreBar {
-	overflow: auto;
-	padding: 10px;
-}
+    #scoreBar {
+        border: 5px solid rgb(173, 58, 226);
+        border-style: solid;
+        border-width: 2px 10px 4px 20px;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+        font-weight: bolder;
+        color: deepskyblue
+        }
 
-#wrongScore {
-	float: left;
-	line-height: 40px;
-	font-size: 28px;
-	color: #ff0000;
-}
+    #rightScore {
+        border: 5px solid rgb(173, 58, 226);
+        border-style: solid;
+        border-width: 2px 10px 4px 20px;
+        height: 100px;
+        text-align: center;
+        font-size: 50px;
+        font-weight: 600;
+        color: black;
+        }
 
-#rightScore {
-	float: right;
-	line-height: 40px;
-	font-size: 28px;
-	color: #008000;
-}
+    #timeremaining {
+        border: 5px solid rgb(173, 58, 226);
+        border-style: solid;
+        border-width: 2px 10px 4px 20px;
+        height: 100px;
+        text-align: center;
+        font-size: 25px;
+        color: black;
+        }
 
-#gameArea {
-	margin: auto;
-	margin-top: calc(5vh);
-	min-height: calc(90vh);
-	width: calc(90vw);
-	background-color: #fff9c4;
-}
+    #wrongScore {
+        border: 5px solid rgb(173, 58, 226);
+        border-style: solid;
+        border-width: 2px 10px 4px 20px;
+        height: 100px;
+        text-align: center;
+        font-size: 50px;
+        font-weight: 600;
+        color: black;
+        }
 
-#gameTitle {
-	text-align: center;
-	font-size: 24px;
-	line-height: 40px;
-	margin-bottom: 20px;
-}
+    #question {
+        border: 5px solid rgb(173, 58, 226);
+        border-style: solid;
+        border-width: 2px 10px 4px 20px;
+        height: 200px;
+        text-align: center;
+        font-size: 35px;
+        font-weight: 600;
+        color: rgb(70, 202, 98);
+        }
 
-#timeRemaining {
-	text-align: center;
-	font-size: 22px;
-	line-height: 40px;
-}
+    #answers {
+        border: 5px solid rgb(173, 58, 226);
+        border-style: solid;
+        border-width: 2px 10px 0px 20px;
+        height: 200px;
+        text-align: center;
+        font-size: 35px;
+        font-weight: 600;
+        color: rgb(56, 44, 165);
+        }
 
-#question {
-	text-align: center;
-	font-size: 22px;
-	line-height: 40px;
-}
-
-#answers {
-	text-align: center;
-	font-size: 18px;
-	line-height: 40px;
-	padding: 20px;
-}
-
-.selectedAnswer {
-	border-style: solid;
-	border-width: 2px;
-	border-color: #000000;
-}
+    .selectedAnswer {
+        border: 5px solid rgb(173, 58, 226);
+        border-style: solid;
+        border-width: 2px 10px 4px 20px;
+        text-align: center;
+        font-size: 35px;
+        color: black;
+        }
