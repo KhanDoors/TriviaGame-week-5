@@ -13,11 +13,11 @@ var rightScore = 0;
 var clockTick = function () {
 	if (clockSecs > 0) {
 		clockSecs--;
-		divs.timeremaining.html("timeremaining: " + clockSecs);
+		divs.timeremaining.html("Time Remaining: " + clockSecs);
 	} else {
 		clearInterval(clock);
 		clockSecs = 0;
-		divs.timeremaining.html("timeremaining: " + clockSecs);
+		divs.timeremaining.html("Time Remaining: " + clockSecs);
 		timedOut();
 	}
 };
@@ -112,7 +112,7 @@ var nextQuestion = function () {
 
 		isActive = true;
 		clockSecs = 20;
-		divs.timeremaining.html("timeremaining: " + clockSecs);
+		divs.timeremaining.html("Time Remaining: " + clockSecs);
 		clock = setInterval(clockTick, 1000);
 
 	} else {
