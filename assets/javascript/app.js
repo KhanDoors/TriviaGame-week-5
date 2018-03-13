@@ -13,11 +13,11 @@ var rightScore = 0;
 var clockTick = function () {
 	if (clockSecs > 0) {
 		clockSecs--;
-		divs.timeRemaining.html("timeremaining: " + clockSecs);
+		divs.timeremaining.html("timeremaining: " + clockSecs);
 	} else {
 		clearInterval(clock);
 		clockSecs = 0;
-		divs.timeRemaining.html("timeremaining: " + clockSecs);
+		divs.timeremaining.html("timeremaining: " + clockSecs);
 		timedOut();
 	}
 };
@@ -26,7 +26,7 @@ var reset = function () {
 	isActive = false;
 	clearInterval(clock);
 	clockSecs = 0;
-	divs.timeRemaining.empty();
+	divs.timeremaining.empty();
 	divs.question.empty();
 	divs.answers.empty();
 }
@@ -45,7 +45,7 @@ var loadQuestions = function () {
 var timedOut = function () {
 	clearInterval(clock);
 	isActive = false;
-	divs.timeRemaining.html("Out of time!");
+	divs.timeremaining.html("Out of time!");
 	divs.answers.html("Correct answer: " + questionObj.correct_answer);
 	wrongScore++;
 	divs.wrongScore.html("Wrong: " + wrongScore);
@@ -57,7 +57,7 @@ var timedOut = function () {
 var wrongAnswer = function () {
 	clearInterval(clock);
 	isActive = false;
-	divs.timeRemaining.html("Wrong answer.");
+	divs.timeremaining.html("Wrong answer.");
 	divs.answers.html("Correct answer: " + questionObj.correct_answer);
 	wrongScore++;
 	divs.wrongScore.html("Wrong: " + wrongScore);
@@ -69,7 +69,7 @@ var wrongAnswer = function () {
 var rightAnswer = function () {
 	clearInterval(clock);
 	isActive = false;
-	divs.timeRemaining.html("Right answer!!");
+	divs.timeremaining.html("Right answer!!");
 	rightScore++;
 	divs.rightScore.html("Right: " + rightScore);
 	let messageTimerId = setTimeout(function () {
@@ -112,7 +112,7 @@ var nextQuestion = function () {
 
 		isActive = true;
 		clockSecs = 20;
-		divs.timeRemaining.html("timeremaining: " + clockSecs);
+		divs.timeremaining.html("timeremaining: " + clockSecs);
 		clock = setInterval(clockTick, 1000);
 
 	} else {
@@ -124,7 +124,7 @@ var initGame = function () {
 	divs = {
 		wrongScore: $("#wrongScore"),
 		rightScore: $("#rightScore"),
-		timeRemaining: $("#timeRemaining"),
+		timeremaining: $("#timeremaining"),
 		question: $("#question"),
 		answers: $("#answers")
 	};
