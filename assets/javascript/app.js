@@ -1,4 +1,3 @@
-
 var questions = [];
 var response = NaN;
 var queryURL = "https://opentdb.com/api.php";
@@ -30,13 +29,15 @@ var reset = function () {
 	divs.question.empty();
 	divs.answers.empty();
 }
- 
+
 var loadQuestions = function () {
 	$.ajax({
 		url: queryURL,
 		method: "GET",
-		data: { amount: 20 }
-	}).done(function(response) {
+		data: {
+			amount: 20
+		}
+	}).done(function (response) {
 		questions = response.results;
 		nextQuestion();
 	});
@@ -85,7 +86,7 @@ var checkAnswer = function (event) {
 			rightAnswer();
 		} else {
 			wrongAnswer();
-		};	
+		};
 	}
 };
 
@@ -98,7 +99,7 @@ var nextQuestion = function () {
 
 		questionObj = questions.pop();
 		let allAnswers = questionObj.incorrect_answers;
-		let rightAnswer = questionObj.correct_answer; 
+		let rightAnswer = questionObj.correct_answer;
 		allAnswers.splice(Math.floor(Math.random() * allAnswers.length), 0, rightAnswer);
 
 		for (let i = 0; i < allAnswers.length; i++) {
@@ -137,9 +138,6 @@ var initGame = function () {
 	nextQuestion();
 };
 
-$(document).ready(function() {
+$(document).ready(function () {
 	initGame();
 });
-
-
- 

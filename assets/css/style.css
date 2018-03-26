@@ -3,80 +3,79 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-      
-    }
+}
 
-    #scoreBar {
-        border: 5px solid rgb(173, 58, 226);
-        border-style: solid;
-        border-width: 2px 10px 4px 20px;
-        text-align: center;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 20px;
-        font-weight: bolder;
-        color: deepskyblue
-        }
+#scoreBar {
+    border: 5px solid rgb(173, 58, 226);
+    border-style: solid;
+    border-width: 2px 10px 4px 20px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    color: deepskyblue
+}
 
-    #rightScore {
-        border: 5px solid rgb(173, 58, 226);
-        border-style: solid;
-        border-width: 2px 10px 4px 20px;
-        height: 100px;
-        text-align: center;
-        font-size: 45px;
-        font-weight: 500;
-        color: black;
-        }
+#rightScore {
+    border: 5px solid rgb(173, 58, 226);
+    border-style: solid;
+    border-width: 2px 10px 4px 20px;
+    height: 100px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 500;
+    color: black;
+}
 
-    #timeremaining {
-        border: 5px solid rgb(173, 58, 226);
-        border-style: solid;
-        border-width: 2px 10px 4px 20px;
-        height: 100px;
-        text-align: center;
-        font-size: 45px;
-        font-weight: 500;
-        color: black;
-        }
+#timeremaining {
+    border: 5px solid rgb(173, 58, 226);
+    border-style: solid;
+    border-width: 2px 10px 4px 20px;
+    height: 100px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 500;
+    color: black;
+}
 
-    #wrongScore {
-        border: 5px solid rgb(173, 58, 226);
-        border-style: solid;
-        border-width: 2px 10px 4px 20px;
-        height: 100px;
-        text-align: center;
-        font-size: 45px;
-        font-weight: 500;
-        color: black;
-        }
+#wrongScore {
+    border: 5px solid rgb(173, 58, 226);
+    border-style: solid;
+    border-width: 2px 10px 4px 20px;
+    height: 100px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 500;
+    color: black;
+}
 
-    #question {
-        border: 5px solid rgb(173, 58, 226);
-        border-style: solid;
-        border-width: 2px 10px 4px 20px;
-        height: 200px;
-        text-align: center;
-        font-size: 35px;
-        font-weight: 600;
-        color: rgb(70, 202, 98);
-        }
+#question {
+    border: 5px solid rgb(173, 58, 226);
+    border-style: solid;
+    border-width: 2px 10px 4px 20px;
+    height: 200px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    color: rgb(70, 202, 98);
+}
 
-    #answers {
-        border: 5px solid rgb(173, 58, 226);
-        border-style: solid;
-        border-width: 2px 10px 0px 20px;
-        height: 200px;
-        text-align: center;
-        font-size: 35px;
-        font-weight: 600;
-        color: rgb(56, 44, 165);
-        }
+#answers {
+    border: 5px solid rgb(173, 58, 226);
+    border-style: solid;
+    border-width: 2px 10px 0px 20px;
+    height: 200px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    color: rgb(56, 44, 165);
+}
 
-    .selectedAnswer {
-        border: 5px solid rgb(173, 58, 226);
-        border-style: solid;
-        border-width: 2px 10px 4px 20px;
-        text-align: center;
-        font-size: 35px;
-        color: black;
-        }
+.selectedAnswer {
+    border: 5px solid rgb(173, 58, 226);
+    border-style: solid;
+    border-width: 2px 10px 4px 20px;
+    text-align: center;
+    font-size: 35px;
+    color: black;
+}
